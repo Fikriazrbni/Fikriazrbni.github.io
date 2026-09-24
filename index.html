@@ -202,6 +202,21 @@
             </button>
           </div>
 
+          <!-- CV / Resume Download Badge Button -->
+          <a
+            href="https://drive.google.com/file/d/1I0oDYFuRX5NwJHf0wqSxllFhMywLbqA9/view?usp=sharing"
+            id="header-cv-btn"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md text-xs font-mono font-medium text-cyan-bright bg-cyan-500/10 border border-cyan-500/40 hover:bg-cyan-500/20 hover:border-cyan-400 transition-all shadow-sm group"
+            title="Download CV / Resume (PDF)"
+          >
+            <i data-lucide="file-down" class="w-3.5 h-3.5 text-cyan-bright group-hover:translate-y-0.5 transition-transform"></i>
+            <span class="hidden sm:inline" data-i18n="nav_download_cv">Download CV</span>
+            <span class="sm:hidden font-bold">CV</span>
+            <span class="text-[9px] px-1 py-0.2 rounded bg-cyan-400/20 text-cyan-300 font-mono font-bold border border-cyan-400/30">PDF</span>
+          </a>
+
           <a
             href="https://github.com/Fikriazrbni?tab=repositories"
             target="_blank"
@@ -253,6 +268,19 @@
           <a href="#projects" class="mobile-nav-link py-2 px-3 rounded hover:bg-surface-900 text-slate-300 hover:text-cyan-bright" data-i18n="nav_projects">04. //github projects</a>
           <a href="#experience" class="mobile-nav-link py-2 px-3 rounded hover:bg-surface-900 text-slate-300 hover:text-cyan-bright" data-i18n="nav_career">05. //career</a>
           <a href="#contact" class="mobile-nav-link py-2 px-3 rounded hover:bg-surface-900 text-slate-300 hover:text-cyan-bright" data-i18n="nav_contact">06. //contact</a>
+          <a
+            href="https://drive.google.com/file/d/1I0oDYFuRX5NwJHf0wqSxllFhMywLbqA9/view?usp=sharing"
+            id="mobile-cv-btn"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="mobile-nav-link py-2 px-3 rounded bg-cyan-500/10 border border-cyan-500/30 text-cyan-bright flex items-center justify-between"
+          >
+            <span class="flex items-center gap-2">
+              <i data-lucide="file-down" class="w-4 h-4 text-cyan-bright"></i>
+              <span data-i18n="nav_download_cv">Download CV</span>
+            </span>
+            <span class="text-[10px] px-2 py-0.5 rounded bg-cyan-500/20 border border-cyan-500/40 text-cyan-300 font-mono font-bold">PDF • 4.10+ Yrs</span>
+          </a>
           <div class="pt-2 border-t border-surface-800 flex gap-2">
             <a href="https://github.com/Fikriazrbni" target="_blank" rel="noopener noreferrer" class="flex-1 py-2 inline-flex items-center justify-center gap-1.5 rounded bg-surface-900 border border-surface-800 text-slate-300 hover:text-cyan-bright transition-colors">
               <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24" aria-hidden="true">
@@ -280,9 +308,11 @@
             <!-- Enterprise Badge -->
             <div class="inline-flex flex-wrap items-center gap-2 px-3.5 py-1.5 rounded-full bg-surface-900/90 border border-cyan-500/30 text-xs font-mono text-slate-300 badge-glow">
               <span class="w-2 h-2 rounded-full bg-cyan-bright shadow-[0_0_8px_#22d3ee] animate-pulse"></span>
-              <span class="font-bold text-cyan-bright" data-i18n="hero_badge_exp">4.10+ Years Experience</span>
+              <span class="font-bold text-cyan-bright" data-i18n="hero_badge_exp">4+ Years Experience</span>
               <span class="text-surface-600">|</span>
-              <span class="text-slate-300" data-i18n="hero_badge_domain">Telecommunication & Banking (Tier-1)</span>
+              <span class="text-slate-300" data-i18n="hero_badge_domain">Telecommunication & Banking</span>
+              <span class="text-surface-600">|</span>
+              <span class="text-purple-300 font-semibold" data-i18n="hero_badge_ai">Custom AI Agents & TestOps</span>
             </div>
 
             <!-- Main Heading & Title -->
@@ -295,30 +325,31 @@
                 </span>
               </h1>
               <div class="flex flex-wrap items-center gap-2 pt-1">
-                <span class="px-2.5 py-0.5 rounded bg-surface-900 border border-surface-800 text-xs font-mono text-cyan-bright">XL Smart</span>
-                <span class="px-2.5 py-0.5 rounded bg-surface-900 border border-surface-800 text-xs font-mono text-blue-300">PT. BCA Digital</span>
-                <span class="px-2.5 py-0.5 rounded bg-surface-900 border border-surface-800 text-xs font-mono text-amber-300">PT Bank Mandiri</span>
+                <span class="px-2.5 py-0.5 rounded bg-surface-900 border border-cyan-500/40 text-xs font-mono text-cyan-bright">XL Smart</span>
+                <span class="px-2.5 py-0.5 rounded bg-surface-900 border border-blue-500/40 text-xs font-mono text-blue-300">PT. BCA Digital</span>
+                <span class="px-2.5 py-0.5 rounded bg-surface-900 border border-emerald-500/40 text-xs font-mono text-emerald-300">PT Bank Mandiri</span>
+                <span class="px-2.5 py-0.5 rounded bg-purple-500/10 border border-purple-500/30 text-xs font-mono text-purple-300">AI Agents & RCA</span>
               </div>
             </div>
 
             <!-- Professional Summary Tagline -->
             <p class="text-base sm:text-lg text-slate-300 leading-relaxed max-w-2xl" data-i18n="hero_summary">
-              Specialist in enterprise end-to-end test automation ecosystems: architected high-performance backend microservices with <span class="text-cyan-bright font-mono font-medium">FastAPI</span> that boosted operational efficiency by <span class="text-emerald-400 font-bold font-mono">75%</span>, orchestrating <span class="text-cyan-bright font-mono font-medium">Playwright</span>, <span class="text-cyan-bright font-mono font-medium">Selenium</span>, and <span class="text-cyan-bright font-mono font-medium">Appium</span> frameworks, and building AI-native workflow automations with <span class="text-cyan-bright font-mono font-medium">n8n</span> & <span class="text-cyan-bright font-mono font-medium">Telegram Bot</span>.
+              Dynamic Senior QA Automation Engineer & SDET with 4+ years of experience across telecommunications and banking. Expert in architecting full-stack automation ecosystems and AI-augmented QA tooling—from <span class="text-cyan-bright font-mono font-medium">FastAPI backend microservices</span> (+75% efficiency) to <span class="text-purple-300 font-mono font-medium">custom AI agents</span> for code refactoring, pre-commit quality gates, and automated Root Cause Analysis (RCA).
             </p>
 
             <!-- Key Quick Impact Indicators -->
             <div class="grid grid-cols-3 gap-3 py-2 max-w-lg">
               <div class="p-3.5 rounded-xl bg-surface-900/80 border border-surface-800/80 hover:border-cyan-500/40 transition-colors">
-                <div class="text-2xl sm:text-3xl font-extrabold font-mono text-cyan-bright">75%</div>
+                <div class="text-2xl sm:text-3xl font-extrabold font-mono text-cyan-bright">+75%</div>
                 <div class="text-[11px] text-slate-400 uppercase tracking-wider mt-0.5" data-i18n="hero_m1">Product Efficiency (XL Smart)</div>
               </div>
               <div class="p-3.5 rounded-xl bg-surface-900/80 border border-surface-800/80 hover:border-emerald-500/40 transition-colors">
                 <div class="text-2xl sm:text-3xl font-extrabold font-mono text-emerald-400">91%</div>
                 <div class="text-[11px] text-slate-400 uppercase tracking-wider mt-0.5" data-i18n="hero_m2">Cut Regression Time (Mandiri)</div>
               </div>
-              <div class="p-3.5 rounded-xl bg-surface-900/80 border border-surface-800/80 hover:border-teal-500/40 transition-colors">
-                <div class="text-2xl sm:text-3xl font-extrabold font-mono text-teal-300">50+</div>
-                <div class="text-[11px] text-slate-400 uppercase tracking-wider mt-0.5" data-i18n="hero_m3">Product Releases/Wk (TestOps)</div>
+              <div class="p-3.5 rounded-xl bg-surface-900/80 border border-surface-800/80 hover:border-purple-500/40 transition-colors">
+                <div class="text-2xl sm:text-3xl font-extrabold font-mono text-purple-300">50+</div>
+                <div class="text-[11px] text-slate-400 uppercase tracking-wider mt-0.5" data-i18n="hero_m3">Zero-Bug Releases/Wk (TestOps)</div>
               </div>
             </div>
 
@@ -387,6 +418,12 @@
               <div class="p-3 bg-surface-900 border-t border-surface-800 flex flex-wrap items-center gap-2">
                 <span class="text-[11px] font-mono text-slate-400">Simulate:</span>
                 <button
+                  onclick="runTerminalCommand('ai_agent_rca')"
+                  class="px-2.5 py-1 rounded bg-purple-500/15 hover:bg-purple-500/25 text-purple-300 hover:text-white border border-purple-500/40 font-mono text-[11px] transition-colors"
+                >
+                  ✨ ai agent (rca)
+                </button>
+                <button
                   onclick="runTerminalCommand('playwright_e2e')"
                   class="px-2.5 py-1 rounded bg-surface-850 hover:bg-surface-800 text-cyan-bright hover:text-white border border-cyan-500/30 font-mono text-[11px] transition-colors"
                 >
@@ -437,25 +474,25 @@
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
           <!-- Metric Card 1: XL Smart -->
-          <div class="p-6 rounded-2xl bg-surface-900/80 border border-surface-800 hover:border-cyan-500/40 transition-all flex flex-col justify-between group">
+          <div class="p-6 rounded-2xl bg-surface-900/80 border border-cyan-500/30 hover:border-cyan-400/60 transition-all flex flex-col justify-between group shadow-neon/10">
             <div class="space-y-3">
               <div class="flex items-center justify-between">
                 <span class="px-2.5 py-1 rounded bg-cyan-500/10 text-cyan-bright border border-cyan-500/20 text-xs font-mono font-semibold">
                   XL Smart (Telco)
                 </span>
-                <span class="text-xs font-mono text-slate-400" data-i18n="impact_xl_time">2024 — Present</span>
+                <span class="text-xs font-mono text-purple-300" data-i18n="impact_xl_time">2024 — Present</span>
               </div>
               <div class="text-4xl font-extrabold font-mono text-white group-hover:text-cyan-bright transition-colors">
                 +75%
               </div>
-              <h3 class="text-base font-bold text-slate-100" data-i18n="impact_xl_title">Product Creation Efficiency with FastAPI</h3>
+              <h3 class="text-base font-bold text-slate-100" data-i18n="impact_xl_title">Product Creation Efficiency & Custom AI Agents</h3>
               <p class="text-xs sm:text-sm text-slate-400 leading-relaxed" data-i18n="impact_xl_desc">
-                Architected Python-based FastAPI backend automation, replacing manual product onboarding and accelerating digital product delivery by 75%.
+                Engineered robust FastAPI automation boosting product creation efficiency by 75%, and built custom AI agents for automated pre-commit code sanity checks, LLM test refactoring, and AI-driven Root Cause Analysis (RCA) on TestOps execution failures.
               </p>
             </div>
-            <div class="pt-4 mt-4 border-t border-surface-800 flex items-center gap-2 text-xs font-mono text-slate-400">
+            <div class="pt-4 mt-4 border-t border-surface-800 flex items-center gap-2 text-xs font-mono text-slate-300">
               <i data-lucide="check" class="w-4 h-4 text-cyan-bright"></i>
-              <span data-i18n="impact_xl_check">50+ Weekly Product Releases via TestOps</span>
+              <span data-i18n="impact_xl_check">50+ Weekly Product Releases with Zero Critical Bugs</span>
             </div>
           </div>
 
@@ -962,7 +999,25 @@
         </div>
 
         <!-- Skills Cards Grid -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4" id="skills-grid">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4" id="skills-grid">
+          <!-- 0. Custom AI Agents & QA Innovation (Featured) -->
+          <div class="skill-card p-4 rounded-xl bg-surface-900/90 border border-purple-500/40 hover:border-purple-400/80 transition-all group shadow-sm hover:shadow-[0_0_15px_rgba(168,85,247,0.15)]" data-category="microservices">
+            <div class="flex items-center justify-between mb-3">
+              <div class="w-10 h-10 rounded-lg bg-surface-950 border border-purple-500/30 flex items-center justify-center text-purple-300">
+                <i data-lucide="bot" class="w-5 h-5"></i>
+              </div>
+              <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-purple-500/10 text-purple-300 border border-purple-500/20">AI Agents & LLM</span>
+            </div>
+            <h3 class="font-bold text-slate-100 text-base group-hover:text-purple-300 transition-colors">Custom AI Agents & RCA</h3>
+            <p class="text-xs text-slate-400 mt-1 leading-relaxed">
+              Automated pre-commit code sanity checks, LLM-based test script refactoring, dan AI-driven Root Cause Analysis (RCA) pada kegagalan TestOps untuk defect triage instan.
+            </p>
+            <div class="mt-3 pt-3 border-t border-surface-800 flex items-center justify-between text-[11px] font-mono text-slate-400">
+              <span>XL Smart Production</span>
+              <span class="text-purple-300">AI Quality Gates</span>
+            </div>
+          </div>
+
           <!-- 1. Playwright -->
           <div class="skill-card p-4 rounded-xl bg-surface-900/80 border border-surface-800 hover:border-cyan-500/50 transition-all group" data-category="automation">
             <div class="flex items-center justify-between mb-3">
@@ -1142,13 +1197,17 @@
                 </span>
               </div>
               <ul class="space-y-2 text-xs sm:text-sm text-slate-300 leading-relaxed list-disc list-inside">
-                <li data-i18n="exp_xl_b1"><strong class="text-slate-100">Infrastructure & Efficiency:</strong> Architected backend automation infrastructure with FastAPI (Python), replacing manual workflows and speeding digital product delivery by 75%.</li>
-                <li data-i18n="exp_xl_b2"><strong class="text-slate-100">Full-Stack Automation:</strong> Developed and scaled UI automation frameworks (Playwright/TypeScript & Python) and API test engines (Python & Katalon Studio).</li>
-                <li data-i18n="exp_xl_b3"><strong class="text-slate-100">Business Process Automation:</strong> Engineered custom n8n workflows integrated with databases, email systems, and custom JS nodes for real-time reporting.</li>
-                <li data-i18n="exp_xl_b4"><strong class="text-slate-100">CI/CD & Delivery:</strong> Orchestrated TestOps CI/CD pipelines ensuring 50+ product releases weekly with automated quality gates.</li>
-                <li data-i18n="exp_xl_b5"><strong class="text-slate-100">Leadership:</strong> Mentored junior engineers and instituted team-wide scripting and framework standards.</li>
+                <li data-i18n="exp_xl_b1"><strong class="text-slate-100">AI Agents & Workflow Engineering:</strong> Developed custom AI agents to automate daily QA tasks, including automated pre-commit code sanity checks, LLM-based test script refactoring, and AI-driven Root Cause Analysis (RCA) on TestOps execution failures to accelerate defect triage.</li>
+                <li data-i18n="exp_xl_b2"><strong class="text-slate-100">Automation Infrastructure & Efficiency:</strong> Engineered a robust automation infrastructure using FastAPI (Python), replacing manual processes and boosting product creation efficiency by 75%.</li>
+                <li data-i18n="exp_xl_b3"><strong class="text-slate-100">Full-Stack Test Automation:</strong> Architected scalable UI/API test automation frameworks leveraging Playwright (TypeScript/Python), Python, and Katalon Studio for complex telecom workflows.</li>
+                <li data-i18n="exp_xl_b4"><strong class="text-slate-100">Process & Business Automation:</strong> Designed automated enterprise workflows via n8n integrated with databases, email systems, and custom JavaScript to streamline business reporting.</li>
+                <li data-i18n="exp_xl_b5"><strong class="text-slate-100">CI/CD & Release Quality:</strong> Orchestrated end-to-end CI/CD test execution on TestOps, validating 50+ weekly product releases with zero critical production bugs.</li>
+                <li data-i18n="exp_xl_b6"><strong class="text-slate-100">Technical Leadership:</strong> Mentored junior QA engineers, defined automation standards, and established AI-assisted testing guidelines for team scalability.</li>
               </ul>
               <div class="flex flex-wrap gap-1.5 pt-2 border-t border-surface-800">
+                <span class="px-2 py-0.5 rounded bg-purple-500/10 border border-purple-500/30 text-[11px] font-mono text-purple-300">Custom AI Agents</span>
+                <span class="px-2 py-0.5 rounded bg-purple-500/10 border border-purple-500/30 text-[11px] font-mono text-purple-300">LLM Refactoring</span>
+                <span class="px-2 py-0.5 rounded bg-purple-500/10 border border-purple-500/30 text-[11px] font-mono text-purple-300">TestOps RCA</span>
                 <span class="px-2 py-0.5 rounded bg-surface-950 text-[11px] font-mono text-cyan-bright">FastAPI</span>
                 <span class="px-2 py-0.5 rounded bg-surface-950 text-[11px] font-mono text-cyan-bright">Playwright</span>
                 <span class="px-2 py-0.5 rounded bg-surface-950 text-[11px] font-mono text-cyan-bright">n8n</span>
@@ -1174,17 +1233,20 @@
                 </span>
               </div>
               <ul class="space-y-2 text-xs sm:text-sm text-slate-300 leading-relaxed list-disc list-inside">
-                <li data-i18n="exp_bca_b1"><strong class="text-slate-100">Requirement Strategy:</strong> Reviewed software requirements and technical architecture specs for early logical defect identification.</li>
-                <li data-i18n="exp_bca_b2"><strong class="text-slate-100">Java Automation Suite:</strong> Built and maintained ~200 monthly automated test scenarios using Java, Selenium, Cucumber BDD, and TestNG.</li>
-                <li data-i18n="exp_bca_b3"><strong class="text-slate-100">Adaptive Framework:</strong> Created dynamic data-driven testing parsing complex Excel and CSV datasets.</li>
-                <li data-i18n="exp_bca_b4"><strong class="text-slate-100">Full-Cycle Testing:</strong> Orchestrated continuous smoke, functional, integration, and API testing for digital banking feature rollouts.</li>
+                <li data-i18n="exp_bca_b1"><strong class="text-slate-100">Requirement Analysis & Strategy:</strong> Provided critical technical feedback by reviewing software requirements and technical design documents, ensuring early detection of potential logic flaws.</li>
+                <li data-i18n="exp_bca_b2"><strong class="text-slate-100">Mobile & API Test Automation:</strong> Designed and maintained Katalon/Java automation suites for the blu app, executing 200+ automated test scenarios per release and reducing manual testing efforts by 50%.</li>
+                <li data-i18n="exp_bca_b3"><strong class="text-slate-100">CI/CD Integration:</strong> Integrated automated regression runs into daily CI/CD build pipelines, enabling continuous feedback and shortening the defect feedback loop for developers.</li>
+                <li data-i18n="exp_bca_b4"><strong class="text-slate-100">Java Automation Development:</strong> Developed and maintained approximately 200 automated test scenarios monthly using a robust Java stack (Selenium, Cucumber BDD, and TestNG).</li>
+                <li data-i18n="exp_bca_b5"><strong class="text-slate-100">Adaptive Framework Engineering:</strong> Engineered flexible automation frameworks capable of dynamic data-driven testing, utilizing Excel and CSV data parsing to generate complex test datasets.</li>
+                <li data-i18n="exp_bca_b6"><strong class="text-slate-100">Comprehensive Testing Execution:</strong> Orchestrated full-cycle testing activities, including Smoke, Functional, Integration, and API testing, to ensure seamless new feature launches.</li>
               </ul>
               <div class="flex flex-wrap gap-1.5 pt-2 border-t border-surface-800">
+                <span class="px-2 py-0.5 rounded bg-surface-950 text-[11px] font-mono text-amber-300">blu App (BCA)</span>
                 <span class="px-2 py-0.5 rounded bg-surface-950 text-[11px] font-mono text-amber-300">Selenium</span>
                 <span class="px-2 py-0.5 rounded bg-surface-950 text-[11px] font-mono text-amber-300">Cucumber BDD</span>
                 <span class="px-2 py-0.5 rounded bg-surface-950 text-[11px] font-mono text-amber-300">TestNG</span>
                 <span class="px-2 py-0.5 rounded bg-surface-950 text-[11px] font-mono text-amber-300">Java</span>
-                <span class="px-2 py-0.5 rounded bg-surface-950 text-[11px] font-mono text-amber-300">Data-Driven</span>
+                <span class="px-2 py-0.5 rounded bg-surface-950 text-[11px] font-mono text-amber-300">CI/CD Daily</span>
               </div>
             </div>
           </div>
@@ -1205,16 +1267,20 @@
                 </span>
               </div>
               <ul class="space-y-2 text-xs sm:text-sm text-slate-300 leading-relaxed list-disc list-inside">
-                <li data-i18n="exp_mandiri_b1"><strong class="text-slate-100">eWallet Automation:</strong> Orchestrated eWallet project automation for 1,000+ test scenarios using Katalon Studio, Selenium, and Robot Framework.</li>
-                <li data-i18n="exp_mandiri_b2"><strong class="text-slate-100">91% Regression Acceleration:</strong> Achieved a 91% time reduction in regression testing cycles compared to prior manual runs.</li>
-                <li data-i18n="exp_mandiri_b3"><strong class="text-slate-100">API & Load Testing:</strong> Validated 20+ core banking APIs via Postman and conducted load testing simulations using Python.</li>
-                <li data-i18n="exp_mandiri_b4"><strong class="text-slate-100">Core Banking Verification:</strong> Validated data integrity across SQL databases and core banking systems (eMas/AS400).</li>
+                <li data-i18n="exp_mandiri_b1"><strong class="text-slate-100">Test Automation:</strong> Orchestrated automation testing for a complex eWallet project, managing 1,000+ test scenarios using Katalon Studio, Selenium, and Robot Framework.</li>
+                <li data-i18n="exp_mandiri_b2"><strong class="text-slate-100">Framework Architecture (0-to-1):</strong> Built a Python & Robot Framework automation suite from scratch for enterprise banking services, increasing automated test coverage from 35% to 80%.</li>
+                <li data-i18n="exp_mandiri_b3"><strong class="text-slate-100">Shift-Left Quality & Performance:</strong> Conducted early API contract testing and performance profiling, cutting release regression cycles by 40% and preventing critical defects pre-deployment.</li>
+                <li data-i18n="exp_mandiri_b4"><strong class="text-slate-100">Efficiency Optimization:</strong> Achieved an exceptional 91% time efficiency gain in regression testing compared to previous manual testing processes.</li>
+                <li data-i18n="exp_mandiri_b5"><strong class="text-slate-100">API & Load Testing:</strong> Validated 20+ core APIs using Postman and conducted rigorous load testing utilizing Python to ensure system stability.</li>
+                <li data-i18n="exp_mandiri_b6"><strong class="text-slate-100">Data Verification:</strong> Performed data accuracy validation in SQL databases and core banking systems (eMas/AS400), cross-checking over 100 data inputs per test cycle.</li>
               </ul>
               <div class="flex flex-wrap gap-1.5 pt-2 border-t border-surface-800">
-                <span class="px-2 py-0.5 rounded bg-surface-950 text-[11px] font-mono text-emerald-300">Katalon Studio</span>
+                <span class="px-2 py-0.5 rounded bg-surface-950 text-[11px] font-mono text-emerald-300">0-to-1 Architecture</span>
                 <span class="px-2 py-0.5 rounded bg-surface-950 text-[11px] font-mono text-emerald-300">Robot Framework</span>
-                <span class="px-2 py-0.5 rounded bg-surface-950 text-[11px] font-mono text-emerald-300">Postman</span>
+                <span class="px-2 py-0.5 rounded bg-surface-950 text-[11px] font-mono text-emerald-300">Katalon Studio</span>
+                <span class="px-2 py-0.5 rounded bg-surface-950 text-[11px] font-mono text-emerald-300">Postman API</span>
                 <span class="px-2 py-0.5 rounded bg-surface-950 text-[11px] font-mono text-emerald-300">eMas/AS400</span>
+                <span class="px-2 py-0.5 rounded bg-surface-950 text-[11px] font-mono text-emerald-300">Shift-Left Quality</span>
               </div>
             </div>
           </div>
@@ -1451,27 +1517,30 @@
           nav_projects: "04. //github projects",
           nav_career: "05. //career",
           nav_contact: "06. //contact",
+          nav_download_cv: "Download CV",
 
           // Hero Section
-          hero_badge_exp: "4.10+ Years Experience",
-          hero_badge_domain: "Telecommunication & Banking (Tier-1)",
+          hero_badge_exp: "4+ Years Experience",
+          hero_badge_domain: "Telecommunication & Banking",
+          hero_badge_ai: "Custom AI Agents & TestOps",
           hero_role: "// Senior QA Automation Engineer & SDET",
-          hero_summary: "Experienced Software Quality Assurance & SDET specializing in <strong>Test Automation Architecture</strong>, <strong>Microservices Automation</strong>, and <strong>Reliability Engineering</strong>. Proven track record optimizing test efficiency by up to <strong>91%</strong> across leading Indonesian telecom and banking enterprise systems.",
-          hero_m1: "Test Speedup / Regress Reduction",
-          hero_m2: "Internal Productivity Boost",
-          hero_m3: "Automated Test Scenarios",
+          hero_summary: "Dynamic Senior QA Automation Engineer & SDET with 4+ years of experience in telecommunications and banking sectors. Expert in architecting full-stack automation ecosystems and AI-augmented QA tooling, from FastAPI backend microservices (boosting efficiency by 75%) to custom AI agents for code refactoring, pre-commit quality gates, and automated Root Cause Analysis (RCA). Proven track record in orchestrating Playwright/Python frameworks, TestOps CI/CD pipelines, and mentoring engineering teams to ensure rapid, high-quality deployments.",
+          hero_m1: "Product Efficiency (XL Smart)",
+          hero_m2: "Cut Regression Time (Mandiri)",
+          hero_m3: "Zero-Bug Releases/Wk (TestOps)",
           hero_cta_projects: "Explore GitHub Projects",
+          hero_cta_cv: "Download CV (PDF)",
           hero_cta_wa: "Chat WhatsApp",
-          terminal_hint: "Click buttons to simulate automated test suites & microservices:",
+          terminal_hint: "Click buttons to simulate automated test suites, AI Agents & microservices:",
 
           // Impact Section
           impact_subtitle: "MEASURABLE ENTERPRISE METRICS",
           impact_title: "Industry Impact & Value Delivered",
-          impact_desc: "Proven impact in telecommunications and banking through end-to-end automation, backend services, and automated regression testing.",
-          impact_xl_title: "FastAPI Automation & Delivery",
+          impact_desc: "Proven impact in telecommunications and banking through end-to-end automation, backend services, custom AI agents, and accelerated defect triage.",
+          impact_xl_title: "Product Efficiency & Custom AI Agents",
           impact_xl_time: "Aug 2024 — Present",
-          impact_xl_desc: "Spearheaded internal automation infrastructure using FastAPI and n8n, accelerating product launch readiness from manual turnaround to minutes.",
-          impact_xl_check: "Reduced manual product creation cycle time by 75% across teams.",
+          impact_xl_desc: "Engineered robust FastAPI automation boosting product creation efficiency by 75%, and built custom AI agents for automated pre-commit code sanity checks, LLM test refactoring, and AI-driven Root Cause Analysis (RCA) on TestOps execution failures.",
+          impact_xl_check: "50+ Weekly Product Releases with Zero Critical Bugs.",
           impact_bca_title: "Java BDD & Digital Banking Suite",
           impact_bca_desc: "Engineered data-driven test automation suites using Java, Selenium, Cucumber BDD, and TestNG for mission-critical digital banking features.",
           impact_bca_check: "Maintained 200+ monthly automated scripts with zero production escape incidents.",
@@ -1482,10 +1551,10 @@
           // Skills Section
           skills_subtitle: "CORE COMPETENCIES & TOOLING",
           skills_title: "Full-Spectrum QA & Automation Arsenal",
-          skills_desc: "Battle-tested tech stack and tools mastered across professional engagements and open-source contributions.",
+          skills_desc: "Battle-tested tech stack, custom AI agents, and tools mastered across professional engagements and open-source contributions.",
           filter_all: "All Arsenal",
           filter_qa: "Test Automation",
-          filter_micro: "Microservices & Ops",
+          filter_micro: "AI Agents & Microservices",
           filter_devops: "CI/CD & Monitoring",
           filter_lang: "Languages & DB",
 
@@ -1517,16 +1586,19 @@
           exp_title: "Professional Experience",
           exp_desc: "Technical leadership and quality engineering contributions across top Indonesian telecom and digital banking institutions.",
           exp_xl_time: "August 2024 — Present",
-          exp_xl_b1: '<strong class="text-slate-100">Infrastructure & Efficiency:</strong> Architected backend automation infrastructure with FastAPI (Python), replacing manual workflows and speeding digital product delivery by 75%.',
-          exp_xl_b2: '<strong class="text-slate-100">Full-Stack Automation:</strong> Developed and scaled UI automation frameworks (Playwright/TypeScript & Python) and API test engines (Python & Katalon Studio).',
-          exp_xl_b3: '<strong class="text-slate-100">Business Process Automation:</strong> Engineered custom n8n workflows integrated with databases, email systems, and custom JS nodes for real-time reporting.',
-          exp_xl_b4: '<strong class="text-slate-100">CI/CD & Delivery:</strong> Orchestrated TestOps CI/CD pipelines ensuring 50+ product releases weekly with automated quality gates.',
-          exp_xl_b5: '<strong class="text-slate-100">Leadership:</strong> Mentored junior engineers and instituted team-wide scripting and framework standards.',
+          exp_xl_b1: '<strong class="text-slate-100">AI Agents & Workflow Engineering:</strong> Developed custom AI agents to automate daily QA tasks, including automated pre-commit code sanity checks, LLM-based test script refactoring, and AI-driven Root Cause Analysis (RCA) on TestOps execution failures to accelerate defect triage.',
+          exp_xl_b2: '<strong class="text-slate-100">Automation Infrastructure & Efficiency:</strong> Engineered a robust automation infrastructure using FastAPI (Python), replacing manual processes and boosting product creation efficiency by 75%.',
+          exp_xl_b3: '<strong class="text-slate-100">Full-Stack Test Automation:</strong> Architected scalable UI/API test automation frameworks leveraging Playwright (TypeScript/Python), Python, and Katalon Studio for complex telecom workflows.',
+          exp_xl_b4: '<strong class="text-slate-100">Process & Business Automation:</strong> Designed automated enterprise workflows via n8n integrated with databases, email systems, and custom JavaScript to streamline business reporting.',
+          exp_xl_b5: '<strong class="text-slate-100">CI/CD & Release Quality:</strong> Orchestrated end-to-end CI/CD test execution on TestOps, validating 50+ weekly product releases with zero critical production bugs.',
+          exp_xl_b6: '<strong class="text-slate-100">Technical Leadership:</strong> Mentored junior QA engineers, defined automation standards, and established AI-assisted testing guidelines for team scalability.',
           exp_bca_time: "January 2023 — August 2024",
-          exp_bca_b1: '<strong class="text-slate-100">Requirement Strategy:</strong> Reviewed software requirements and technical architecture specs for early logical defect identification.',
-          exp_bca_b2: '<strong class="text-slate-100">Java Automation Suite:</strong> Built and maintained ~200 monthly automated test scenarios using Java, Selenium, Cucumber BDD, and TestNG.',
-          exp_bca_b3: '<strong class="text-slate-100">Adaptive Framework:</strong> Created dynamic data-driven testing parsing complex Excel and CSV datasets.',
-          exp_bca_b4: '<strong class="text-slate-100">Full-Cycle Testing:</strong> Orchestrated continuous smoke, functional, integration, and API testing for digital banking feature rollouts.',
+          exp_bca_b1: '<strong class="text-slate-100">Requirement Analysis & Strategy:</strong> Provided critical technical feedback by reviewing software requirements and technical design documents, ensuring early detection of potential logic flaws.',
+          exp_bca_b2: '<strong class="text-slate-100">Mobile & API Test Automation:</strong> Designed and maintained Katalon/Java automation suites for the blu app, executing 200+ automated test scenarios per release and reducing manual testing efforts by 50%.',
+          exp_bca_b3: '<strong class="text-slate-100">CI/CD Integration:</strong> Integrated automated regression runs into daily CI/CD build pipelines, enabling continuous feedback and shortening the defect feedback loop for developers.',
+          exp_bca_b4: '<strong class="text-slate-100">Java Automation Development:</strong> Developed and maintained approximately 200 automated test scenarios monthly using a robust Java stack (Selenium, Cucumber BDD, and TestNG).',
+          exp_bca_b5: '<strong class="text-slate-100">Adaptive Framework Engineering:</strong> Engineered flexible automation frameworks capable of dynamic data-driven testing, utilizing Excel and CSV data parsing to generate complex test datasets.',
+          exp_bca_b6: '<strong class="text-slate-100">Comprehensive Testing Execution:</strong> Orchestrated full-cycle testing activities, including Smoke, Functional, Integration, and API testing, to ensure seamless new feature launches.',
           exp_mandiri_time: "May 2022 — January 2023",
           exp_mandiri_b1: '<strong class="text-slate-100">eWallet Automation:</strong> Orchestrated eWallet project automation for 1,000+ test scenarios using Katalon Studio, Selenium, and Robot Framework.',
           exp_mandiri_b2: '<strong class="text-slate-100">91% Regression Acceleration:</strong> Achieved a 91% time reduction in regression testing cycles compared to prior manual runs.',
@@ -1540,6 +1612,9 @@
           contact_title: "Let's Connect & Work Together",
           contact_desc: "Open for Senior SDET / QA Automation Engineer roles, contract engineering, automation architecture consulting, and n8n microservices.",
           contact_channels: "Direct Contact Channels",
+          contact_cv_title: "Curriculum Vitae / Resume",
+          contact_cv_subtitle: "PDF Document • Updated 2026 • Verified Experience",
+          contact_cv_btn: "Download CV",
           contact_form_name: "Your Name *",
           contact_form_email: "Your Email *",
           contact_form_subj: "Topic / Subject",
@@ -1553,6 +1628,7 @@
           // Footer
           footer_copy: "© 2026 Fikri Azhari Rabbani. Built with Precision & Automation Spirit.",
           footer_back_to_top: "Back to Top ↑",
+          footer_download_cv: "Download CV (PDF)",
 
           // Dynamic strings
           toast_copied: "Copied to clipboard!",
@@ -1567,27 +1643,30 @@
           nav_projects: "04. //proyek github",
           nav_career: "05. //karier",
           nav_contact: "06. //kontak",
+          nav_download_cv: "Unduh CV",
 
           // Hero Section
-          hero_badge_exp: "4.10+ Tahun Pengalaman",
-          hero_badge_domain: "Telekomunikasi & Perbankan (Tier-1)",
+          hero_badge_exp: "4+ Tahun Pengalaman",
+          hero_badge_domain: "Telekomunikasi & Perbankan",
+          hero_badge_ai: "Custom AI Agents & TestOps",
           hero_role: "// Senior QA Automation Engineer & SDET",
-          hero_summary: "Software Quality Assurance & SDET berpengalaman dalam <strong>Test Automation Architecture</strong>, <strong>Microservices Automation</strong>, dan <strong>Reliability Engineering</strong>. Terbukti meningkatkan efisiensi pengujian hingga <strong>91%</strong> di ekosistem enterprise telekomunikasi dan perbankan digital Indonesia.",
-          hero_m1: "Efisiensi Uji Regresi Mandiri",
-          hero_m2: "Peningkatan Efisiensi Tim XL Smart",
-          hero_m3: "Skenario Otomasi BCA Digital & Mandiri",
+          hero_summary: "Senior QA Automation Engineer & SDET dengan 4+ tahun pengalaman di sektor telekomunikasi dan perbankan. Ahli merancang ekosistem otomasi full-stack dan AI-augmented QA tooling—mulai dari microservices backend FastAPI (+75% efisiensi) hingga custom AI agents untuk refactoring kode, pre-commit quality gates, dan automated Root Cause Analysis (RCA). Terbukti mengorkestrasi framework Playwright/Python, pipeline TestOps CI/CD, dan memimpin tim rekayasa mutu.",
+          hero_m1: "Efisiensi Produk (XL Smart)",
+          hero_m2: "Pangkas Waktu Regresi (Mandiri)",
+          hero_m3: "Rilis Mingguan Zero-Bug (TestOps)",
           hero_cta_projects: "Jelajahi Proyek GitHub",
+          hero_cta_cv: "Unduh CV / Resume (PDF)",
           hero_cta_wa: "Hubungi via WhatsApp",
           terminal_hint: "Klik tombol untuk simulasi test suite otomatis & microservices:",
 
           // Impact Section
           impact_subtitle: "REKAM JEJAK TERUKUR DI TIER-1 ENTERPRISE",
           impact_title: "Dampak Industri & Nilai Bisnis",
-          impact_desc: "Hasil kerja nyata di sektor telekomunikasi dan perbankan melalui otomatisasi end-to-end, backend services, dan efisiensi pengujian regresi.",
-          impact_xl_title: "FastAPI Automation & Delivery",
+          impact_desc: "Dampak terukur di sektor telekomunikasi dan perbankan melalui otomasi end-to-end, microservices backend, custom AI agents, dan triase kegagalan otomatis.",
+          impact_xl_title: "Efisiensi Produk & Custom AI Agents",
           impact_xl_time: "Agt 2024 — Sekarang",
-          impact_xl_desc: "Membangun infrastruktur otomasi internal berbasis FastAPI dan n8n, mengakselerasi kesiapan rilis produk dari proses manual ke hitungan menit.",
-          impact_xl_check: "Memangkas siklus pembuatan produk manual hingga 75% lintas tim.",
+          impact_xl_desc: "Membangun infrastruktur otomasi berbasis FastAPI yang meningkatkan efisiensi pembuatan produk sebesar 75%, serta mengembangkan custom AI agents untuk pre-commit sanity checks, refactoring skrip LLM, dan Root Cause Analysis (RCA) otomatis pada kegagalan TestOps.",
+          impact_xl_check: "50+ Rilis Produk Mingguan dengan Zero Critical Bug.",
           impact_bca_title: "Java BDD & Digital Banking Suite",
           impact_bca_desc: "Mengembangkan framework otomasi data-driven berbasis Java, Selenium, Cucumber BDD, dan TestNG untuk fitur perbankan digital critical.",
           impact_bca_check: "Mengelola 200+ skrip otomatis bulanan dengan zero critical defect lolos ke production.",
@@ -1601,7 +1680,7 @@
           skills_desc: "Daftar teknologi, framework, dan tools yang dikuasai secara mendalam melalui proyek enterprise dan open-source.",
           filter_all: "Semua Arsenal",
           filter_qa: "Test Automation",
-          filter_micro: "Microservices & Ops",
+          filter_micro: "AI Agents & Microservices",
           filter_devops: "CI/CD & Monitoring",
           filter_lang: "Bahasa & Database",
 
@@ -1631,23 +1710,28 @@
           // Experience Section
           exp_subtitle: "JEJAK KARIER TERVERIFIKASI CV",
           exp_title: "Pengalaman Profesional",
-          exp_desc: "Riwayat kepemimpinan teknis dan kontribusi rekayasa mutu di perusahaan telekomunikasi dan bank-bank terkemuka Indonesia.",
+          exp_desc: "Kepemimpinan teknis, rekayasa mutu bertenaga AI, dan kontribusi automation terukur di industri telekomunikasi dan perbankan digital Indonesia.",
           exp_xl_time: "Agustus 2024 — Sekarang",
-          exp_xl_b1: '<strong class="text-slate-100">Infrastruktur & Efisiensi:</strong> Membangun infrastruktur otomasi berbasis FastAPI (Python), menggantikan alur kerja manual dan meningkatkan efisiensi pembuatan produk hingga 75%.',
-          exp_xl_b2: '<strong class="text-slate-100">Full-Stack Automation:</strong> Mengembangkan dan memelihara framework otomasi UI (Playwright/TypeScript & Python) dan API (Python & Katalon Studio).',
-          exp_xl_b3: '<strong class="text-slate-100">Business Process Automation:</strong> Merancang alur kerja n8n terintegrasi database, sistem email, dan JavaScript kustom untuk reporting bisnis.',
-          exp_xl_b4: '<strong class="text-slate-100">CI/CD & Delivery:</strong> Mengelola siklus CI/CD menggunakan TestOps untuk mendukung deployment mingguan 50+ produk melalui validasi otomatis.',
-          exp_xl_b5: '<strong class="text-slate-100">Leadership:</strong> Mentoring junior engineers dan mendefinisikan standar framework serta strategi scripting tim.',
+          exp_xl_b1: '<strong class="text-slate-100">AI Agents & Rekayasa Workflow:</strong> Mengembangkan custom AI agents untuk mengotomasi tugas QA harian, termasuk pre-commit code sanity checks otomatis, refactoring skrip uji berbasis LLM, dan Root Cause Analysis (RCA) bertenaga AI pada kegagalan eksekusi TestOps guna mempercepat defect triage.',
+          exp_xl_b2: '<strong class="text-slate-100">Infrastruktur Otomasi & Efisiensi:</strong> Membangun infrastruktur otomasi tangguh dengan FastAPI (Python), menggantikan proses manual dan mendongkrak efisiensi pembuatan produk hingga 75%.',
+          exp_xl_b3: '<strong class="text-slate-100">Full-Stack Test Automation:</strong> Merancang arsitektur framework otomasi UI/API berskala besar menggunakan Playwright (TypeScript/Python), Python, dan Katalon Studio untuk alur kerja telekomunikasi kompleks.',
+          exp_xl_b4: '<strong class="text-slate-100">Otomasi Proses & Bisnis:</strong> Merancang workflow n8n enterprise otomatis terintegrasi database, sistem email, dan JavaScript kustom untuk efisiensi pelaporan bisnis.',
+          exp_xl_b5: '<strong class="text-slate-100">Kualitas Rilis & CI/CD:</strong> Mengorkestrasi eksekusi pengujian CI/CD end-to-end di TestOps, memvalidasi 50+ rilis produk mingguan dengan zero critical bug di production.',
+          exp_xl_b6: '<strong class="text-slate-100">Technical Leadership:</strong> Membimbing junior QA engineer, menetapkan standar otomasi tim, dan menyusun panduan pengujian berbantuan AI (AI-assisted testing) untuk skalabilitas tim.',
           exp_bca_time: "Januari 2023 — Agustus 2024",
-          exp_bca_b1: '<strong class="text-slate-100">Requirement Strategy:</strong> Mereview dokumen kebutuhan software & technical design untuk deteksi dini kelemahan logika.',
-          exp_bca_b2: '<strong class="text-slate-100">Java Automation Suite:</strong> Membangun dan memelihara sekitar 200 skenario pengujian otomatis bulanan dengan stack Java (Selenium, Cucumber BDD, TestNG).',
-          exp_bca_b3: '<strong class="text-slate-100">Adaptive Framework:</strong> Mengembangkan dynamic data-driven testing parsing dataset Excel dan CSV untuk dataset uji kompleks.',
-          exp_bca_b4: '<strong class="text-slate-100">Full-Cycle Testing:</strong> Mengorkestrasikan smoke, functional, integration, dan API testing untuk peluncuran fitur baru perbankan digital secara aman.',
+          exp_bca_b1: '<strong class="text-slate-100">Analisis Kebutuhan & Strategi:</strong> Memberikan feedback teknis krusial dengan meninjau dokumen spesifikasi software dan arsitektur teknis untuk deteksi dini kelemahan logika.',
+          exp_bca_b2: '<strong class="text-slate-100">Otomasi Mobile & API (blu app):</strong> Merancang dan memelihara test suite otomasi Katalon/Java untuk aplikasi blu, mengeksekusi 200+ skenario uji per rilis dan memangkas beban kerja manual hingga 50%.',
+          exp_bca_b3: '<strong class="text-slate-100">Integrasi CI/CD:</strong> Mengintegrasikan uji regresi otomatis ke dalam build pipeline harian, memberikan umpan balik cepat dan memperpendek loop defect triage bagi developer.',
+          exp_bca_b4: '<strong class="text-slate-100">Pengembangan Otomasi Java:</strong> Mengembangkan dan memelihara sekitar 200 skenario pengujian otomatis bulanan dengan stack Java (Selenium, Cucumber BDD, dan TestNG).',
+          exp_bca_b5: '<strong class="text-slate-100">Arsitektur Framework Adaptif:</strong> Merancang framework data-driven fleksibel yang mem-parsing dataset Excel dan CSV untuk skenario pengujian kompleks.',
+          exp_bca_b6: '<strong class="text-slate-100">Eksekusi Siklus Pengujian Penuh:</strong> Mengorkestrasi pengujian menyeluruh (Smoke, Functional, Integration, dan API testing) untuk memastikan kelancaran peluncuran fitur baru.',
           exp_mandiri_time: "Mei 2022 — Januari 2023",
-          exp_mandiri_b1: '<strong class="text-slate-100">eWallet Automation:</strong> Mengorkestrasikan otomatisasi proyek eWallet dengan 1.000+ test scenarios menggunakan Katalon Studio, Selenium, dan Robot Framework.',
-          exp_mandiri_b2: '<strong class="text-slate-100">Efisiensi 91%:</strong> Mencapai lonjakan efisiensi waktu 91% pada pengujian regresi dibandingkan proses manual sebelumnya.',
-          exp_mandiri_b3: '<strong class="text-slate-100">API & Load Testing:</strong> Memvalidasi 20+ core API dengan Postman dan pengujian beban intensif dengan Python.',
-          exp_mandiri_b4: '<strong class="text-slate-100">Core Banking Verification:</strong> Validasi akurasi data pada database SQL dan core banking (eMas/AS400), memverifikasi 100+ data input per siklus uji.',
+          exp_mandiri_b1: '<strong class="text-slate-100">Otomasi Pengujian:</strong> Mengorkestrasi pengujian otomatis proyek eWallet skala enterprise, mengelola 1.000+ skenario uji dengan Katalon Studio, Selenium, dan Robot Framework.',
+          exp_mandiri_b2: '<strong class="text-slate-100">Arsitektur Framework (0-ke-1):</strong> Membangun framework otomasi Python & Robot Framework dari nol untuk layanan perbankan enterprise, mendongkrak cakupan pengujian otomatis dari 35% menjadi 80%.',
+          exp_mandiri_b3: '<strong class="text-slate-100">Shift-Left Quality & Performa:</strong> Melakukan pengujian kontrak API dini dan profiling performa, memangkas siklus regresi sebesar 40% dan mencegah cacat kritis sebelum tahap deployment.',
+          exp_mandiri_b4: '<strong class="text-slate-100">Optimasi Efisiensi:</strong> Mencapai lonjakan efisiensi waktu 91% pada pengujian regresi dibandingkan alur manual sebelumnya.',
+          exp_mandiri_b5: '<strong class="text-slate-100">API & Load Testing:</strong> Memvalidasi 20+ core banking API via Postman dan mengeksekusi load testing berstandar tinggi dengan Python.',
+          exp_mandiri_b6: '<strong class="text-slate-100">Verifikasi Akurasi Data:</strong> Melakukan validasi akurasi data pada database SQL dan sistem core banking (eMas/AS400), memverifikasi lebih dari 100 data input per siklus uji.',
           exp_edu_title: "Pondasi QA Manual & Pendidikan",
           exp_edu_desc: "Memulai rekam jejak sebagai QA Manual di startup edutech (Sejuta Cita & Ruangguru) menggunakan Jira, Jenkins, dan audit integritas data. Lulusan <strong>S1 Sistem Informasi Universitas Gunadarma</strong> dengan prestasi: Perwakilan UI/UX GEMASTIK 2019, Juara 2 UI/UX Gunadarma, dan Juara 1 FIKTICUP IT Competition.",
 
@@ -1655,7 +1739,10 @@
           contact_subtitle: "INISIASI KOLABORASI",
           contact_title: "Mari Bekerja Sama",
           contact_desc: "Membuka peluang kerja sama full-time, contract role, konsultasi test automation architecture, atau implementasi microservices n8n.",
-          contact_channels: "Saluran Kontak Langsung",
+          contact_channels: "Saluran Kontak & Dokumen Resmi",
+          contact_cv_title: "Curriculum Vitae / Resume",
+          contact_cv_subtitle: "Dokumen PDF • Terverifikasi • Update 2026",
+          contact_cv_btn: "Unduh CV",
           contact_form_name: "Nama Anda *",
           contact_form_email: "Email Anda *",
           contact_form_subj: "Topik / Subject",
@@ -1669,6 +1756,7 @@
           // Footer
           footer_copy: "© 2026 Fikri Azhari Rabbani. Dibangun dengan Presisi & Semangat Otomasi.",
           footer_back_to_top: "Kembali ke Atas ↑",
+          footer_download_cv: "Unduh CV (PDF)",
 
           // Dynamic strings
           toast_copied: "Tersalin ke clipboard!",
@@ -1790,7 +1878,14 @@
         if (!screen) return;
 
         let output = '';
-        if (type === 'playwright_e2e') {
+        if (type === 'ai_agent_rca') {
+          output = `
+<div class="mt-2 text-purple-300 font-semibold">$ sdet-agent --triage-failure run#4829 --auto-refactor</div>
+<div class="text-slate-400">[AI Agent] Ingesting TestOps execution logs & Playwright trace...</div>
+<div class="text-slate-300">⚡ [LLM RCA] Root Cause: Button selector mutated on checkout drawer (#btn-pay -> [data-testid="confirm-pay"])</div>
+<div class="text-emerald-400">✔ [Auto-Refactor] Generated AST patch for tests/checkout.spec.ts (+1, -1)</div>
+<div class="text-purple-300 font-bold">✔ Pre-commit quality gate PASS: Defect triage accelerated in 320ms</div>`;
+        } else if (type === 'playwright_e2e') {
           output = `
 <div class="mt-2 text-cyan-bright font-semibold">$ npx playwright test --workers=4 --reporter=html</div>
 <div class="text-slate-400">Running 28 tests using 4 workers...</div>
@@ -1898,6 +1993,23 @@
           window.location.href = mailtoUrl;
         }, 400);
       }
+
+      // 11. Centralized CV Download Link Management (Header Navigation)
+      let CV_DOWNLOAD_URL = "https://drive.google.com/file/d/1I0oDYFuRX5NwJHf0wqSxllFhMywLbqA9/view?usp=sharing";
+
+      function updateCvLink(url) {
+        if (!url) return;
+        CV_DOWNLOAD_URL = url;
+        const cvIds = ['header-cv-btn', 'mobile-cv-btn'];
+        cvIds.forEach((id) => {
+          const el = document.getElementById(id);
+          if (el) {
+            el.setAttribute('href', url);
+          }
+        });
+      }
+
+      updateCvLink(CV_DOWNLOAD_URL);
     </script>
   </body>
 </html>
